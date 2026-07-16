@@ -1,1 +1,7 @@
 npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"
+npm i next-auth @auth/prisma-adapter prisma @prisma/client zod react-hook-form @hookform/resolvers bcryptjs
+npm i three @react-three/fiber @react-three/drei @react-three/rapier framer-motion
+npm i resend cloudinary
+npm i @upstash/redis @upstash/ratelimit
+npm i lucide-react clsx tailwind-merge
+npm i -D @types/bcryptjs
