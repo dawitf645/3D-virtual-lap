@@ -5,3 +5,4 @@ npm i resend cloudinary
 npm i @upstash/redis @upstash/ratelimit
 npm i lucide-react clsx tailwind-merge
 npm i -D @types/bcryptjs
+npx prisma init
