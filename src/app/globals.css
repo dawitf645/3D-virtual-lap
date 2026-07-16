@@ -1,1 +1,33 @@
-.
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: #020617;
+  color: #import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
+
+async function main() {
+  const subjects = [
+    { slug: "chemistry", name: "Chemistry" },
+    { slug: "physics", name: "Physics" },
+    { slug: "biology", name: "Biology" },
+  ];
+
+  for (const s of subjects) {
+    const subject = await prisma.subject.upsert({
+      where: { slug: s.slug },
+      update: {},
+      create: { slug: s.slug, name: s.name, description: `${s.name} experiments` },
+    });
+
+    for (let i = 1; i <= 120; i++) {
+      const slug = `${s.slug}-experiment-${i}`;
+      await prisma.experiment.upsert({
+        where: { slug },
+        update: {},
+        create: {
+          subjectId:isma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}
