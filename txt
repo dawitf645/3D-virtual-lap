@@ -1,0 +1,31 @@
+src/
+  app/
+    (marketing)/
+      page.tsx
+    (auth)/
+      signin/page.tsx
+      signup/page.tsx
+      verify/page.tsx
+    dashboard/
+      page.tsx
+    api/
+      auth/[...nextauth]/route.ts
+      auth/signup/route.ts
+      auth/verify/route.ts
+      upload/signature/route.ts
+  components/
+    layout/navbar.tsx
+    three/hero-scene.tsx
+    ui/button.tsx
+  lib/
+    db.ts
+    auth.ts
+    resend.ts
+    cloudinary.ts
+    ratelimit.ts
+  validators/
+    auth.ts
+prisma/
+  schema.prisma
+.env.example
+middleware.ts
